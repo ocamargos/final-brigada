@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(135deg,
+            rgba(242, 41, 122, 0.8),
+            #FF4500,
+            #FFA844,
+            #60d8e3);
+    min-height: 100vh;
+    margin: 0;
+    background-attachment: fixed;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 5%;
+    background: linear-gradient(to top, rgba(242, 41, 122, 0.8), rgba(242, 53, 41, 0.8));
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    color: white;
+    text-align: center;
+    flex: 1;
+}
+
+header a {
+    text-decoration: none;
+    color: orange;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+    transition: all 0.2s;
+}
+
+header a:hover {
+    background-color: black;
+    color: #F23529;
+    transform: scale(1.1);
+}
+
+.cards {
+    display: flex;
+    gap: 30px;
+}
+
+.card {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 130px;
+    top: 90px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    width: 400px;
+    height: 375px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+.card img {
+    min-width: 403px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+    font-size: 1em;
+}
+
+.card-content h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.card-content p {
+    color: #666;
+    font-size: 0.9em;
+    margin-top: 8px;
+}
+
+.card-content {
+    padding: 20px;
+    flex: 1;
+}
+
+.card-content h3 {
+    margin: 0;
+    color: #222;
+    font-size: 1.4em;
+}
+
+.card-content p {
+    margin-top: 8px;
+    color: #555;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cardcuriosidade {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .cardcuriosidade img {
+        width: 100%;
+        height: 200px;
+        border-right: none;
+        border-bottom: 3px solid #e5e5e5;
+    }
+
+    .video-capa {
+        width: 90%;
+    }
+
+    .quiz-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0 10px;
+    }
+
+    .card {
+        width: 100%;
+        width: 300px;
+        height: 500px;
+        margin-top: 50px;
+        position: relative;
+        left: 0px;
+
+    }
+
+
+}

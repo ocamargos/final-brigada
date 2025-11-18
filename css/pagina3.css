@@ -54,35 +54,40 @@ section {
 
 .secao-hero {
     background: #ffffff;
-    color: #60d8e3;
+    color: #000000;
 }
 
 .secao-intro-pereciveis {
     background: #60d8e3;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .secao-carnes-info {
     background: #ffef17;
-    color: #ffffff;
+    color: #000000;
 }
 
 /* Seção de Frutas */
 .secao-frutas {
     background: #24de4d;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 /* Seção de Ovos e Laticínios */
 .secao-ovos-laticinios {
     background: #f78121;
-    color: white;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+}
+
+.secao-ovos-laticinios h2{
+    margin-top: 50px;
 }
 
 /* Seção de Título de Cuidados */
 .secao-cuidados-titulo {
     background: #ffffff;
-    color: #42abb5;
+    color: #000000;
 }
 
 /* Seção de Armazenamento */
@@ -135,16 +140,27 @@ p {
 
 .destaque {
     font-weight: bold;
-    font-size: 1.3em;
-    color: white;
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+}
+
+.erro{
+    font-weight: bold;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
 }
 
 .laranja-texto {
-    color: #ffffff;
+    display: flex;
+    position: relative;
+    top: 100px;
+    margin-left: 800px;
+    font-size: 60px;
+    color: #000000;
 }
 
 .azul-texto {
-    color: #1B4965;
+    color: #000000;
 }
 
 .lista {
@@ -182,8 +198,12 @@ p {
 .secao-frutas .caixa,
 .secao-armazenamento .caixa {
     background: rgb(255, 255, 255);
+    font-size: 25px;
 }
 
+.secao-frutas {
+    font-size: 25px;
+}
 .caixa-grande {
     padding: 40px;
 }
@@ -224,7 +244,7 @@ p {
     letter-spacing: 0.3em;
     font-size: 1.8em;
     margin-bottom: 20px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .grande {
@@ -232,7 +252,7 @@ p {
     font-weight: bold;
     margin: 0;
     line-height: 1.2;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .texto-grande {
@@ -245,7 +265,7 @@ p {
 .btn-expandir {
     background: transparent;
     border: none;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 2em;
     padding: 10px;
     cursor: pointer;
@@ -259,11 +279,11 @@ p {
 }
 
 .btn-expandir-escuro {
-    color: #ffffff;
+    color: #000000;
 }
 
 .seta-escura {
-    color: #ffffff;
+    color: #000000;
 }
 
 .seta {
@@ -299,7 +319,7 @@ p {
 }
 
 .quiz-container h2 {
-    color: #333;
+    color: #000000;
 }
 
 .quiz-container .btn {
@@ -307,7 +327,7 @@ p {
     width: 100%;
     background-color: #667eea;
     position: relative;
-    color: white;
+    color: rgb(0, 0, 0);
     border: none;
     border-radius: 8px;
     padding: 10px;
@@ -330,7 +350,7 @@ p {
     position: relative;
     left: 298px;
     border: none;
-    color: white;
+    color: rgb(0, 0, 0);
     cursor: pointer;
 }
 
